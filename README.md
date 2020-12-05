@@ -1,2 +1,0 @@
-# coursera-Linus
-course assignments
