@@ -50,13 +50,13 @@ for (var i = 0; i < names.length; i++) {
 
 name = names[i];
 
-if (name.toLowerCase().charAt(0) == "j") {
-    byeSpeaker.speak ();
+
+if (names[i].toLowerCase().charAt(0) == "j") {
+    byeSpeaker.speak();
 }
 
 else {
-      helloSpeaker.speak ();
-
+   helloSpeaker.speak();
 }
 }
 
