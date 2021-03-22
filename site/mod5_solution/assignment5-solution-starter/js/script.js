@@ -119,7 +119,8 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-       var homeHtmlToInsertIntoMainPage = insertProperty (homeHtml, randomCategoryShortName , '"' + chosenCategoryShortName + '"');
+      chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
+      var homeHtmlToInsertIntoMainPage = insertProperty (homeHtml, "randomCategoryShortName", chosenCategoryShortName);
 
       console.log(homeHtmlToInsertIntoMainPage);
 
@@ -144,7 +145,7 @@ function buildAndShowHomeHTML (categories) {
       //   targetElem.innerHTML = html;
       // };
 
-     insertHtml(homeHtmlToInsertIntoMainPage, homeHtml);
+     insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
